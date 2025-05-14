@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root{
+--primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: 'Mooli', san-serif;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+}
+a:link,
+a:visited{
+    color: var(--text-light);
+}
+nav h2{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+header h1, nav h2, h3{
+    text-align: center;
+}
+.images{
+    border: 0.5rem solid var(--text-dark);
+}
+
+
+/* .img-gallery{
+    max-width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:30px;
+}
+.img-gallery img{
+    max-width: 100%;
+    cursor: pointer;
+} */
+header h1{
+    text-align: center;
+}
+header{
+    background-color:var(--primary-color);
+    color:var(--text-light);
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+.hide {
+	display: none;
+}
+
+
+@media screen and (min-width: 700px) {
+    main{
+        /* display: grid; */
+        /* grid-template-columns:25% 75% ; */
+    }
+    
+  #home_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero{
+    grid-column: 1/3;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+    main{
+        display: grid;
+        margin: auto;
+        /* grid-template-columns:25% 75% ; */
+    }
+    
+  #home_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #hero{
+    grid-column: 1/3;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

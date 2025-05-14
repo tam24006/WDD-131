@@ -2,12 +2,14 @@
 body {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
-    line-height: 1.5;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* margin: 0; */
-    padding: 0;
-    /* background-color: #fff; */
+  }
+  .dark{
+    background-color: #333;
+    color: white;
+  }
+
+  .dark h2 {
+    color: rgb(160, 212, 237);
   }
   .wax{
     align-items: center;
@@ -19,38 +21,27 @@ body {
   
   .container {
     max-width: 600px;
-    width: 100%;
-    padding: 40px;
-    margin: auto;
+    padding: 100px;
+    margin: 50px auto;
     border: 1px solid #ccc;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    text-align: center;
   }
   
 
-  h1 {
+  h1, h2{
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 4px;
   }
   
  
   h2 {
-    font-size: 20px;
-    text-align: center;
-    color: #006eb6;
-    letter-spacing: .05em;
-    border-bottom: solid;
-    border-color: black;
-    /* text-transform: uppercase; */
-    /* margin-bottom: 30px; */
+  color: #006eb6;
+  font-size: .75em;
   }
   
  
-  p {
-    text-align: left;
-    margin-bottom: 20px;
+  p, li{
+  line-height: 1.5;
+  padding: 10px;
   }
   
   em{
@@ -83,12 +74,4 @@ body {
     height: auto;
     display: block;
     margin: 20px auto 0 auto;
-  }
-
-  .dark{
-    background-color: #333;
-    color: white;
-  }
-  .dark h2{
-    color: rgb(160, 212, 237);
   }
