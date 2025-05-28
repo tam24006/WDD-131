@@ -1,5 +1,5 @@
   
-body {
+/* body {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
   }
@@ -74,4 +74,68 @@ body {
     height: auto;
     display: block;
     margin: 20px auto 0 auto;
-  }
+  } */
+
+
+
+
+
+
+
+
+  #content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 50px 150px;
+}
+
+h1, h2{
+    text-align: center;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+h2{
+    color: #006EB6;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(225, 220, 220);
+}
+
+p, ol li{
+    line-height: 1.5;
+}
+
+ol li{
+    margin-bottom: 20px;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.logo{
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+
+
+.dark{
+    background-color:  #333;
+    color: white;
+}
+
+.dark h2{
+    color: #14a2ff;
+}
