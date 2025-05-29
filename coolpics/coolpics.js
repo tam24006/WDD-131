@@ -43,19 +43,16 @@
 
 
 // show and hide menu items 
-const menuButton = document.querySelector("#menu-button");
+let btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+function ToggleMenu() {
+  menu.classList.toggle('hide');
 
-function showMenu() {
-    const navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("hide");
-    console.log("Menu toggled!");
 }
+btn.addEventListener('click', ToggleMenu);
 
-menuButton.addEventListener("click", showMenu);
-
-// Window resize
 function handleResize() {
-    const navLinks = document.querySelector(".nav-links");
+    const navLinks = document.querySelector(".menu");
     if (window.innerWidth > 1000) {
         navLinks.classList.remove("hide");  
     } else {
@@ -94,7 +91,7 @@ function viewHandler(event) {
 }
 
 
-document.querySelector(".gallery").addEventListener("click", viewHandler);
+document.querySelector(".img-gallery").addEventListener("click", viewHandler);
 
 
 

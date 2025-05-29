@@ -38,6 +38,25 @@ header h1, nav h2, h3{
     max-width: 250px;
     
 }
+.image{
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 6;
+    position: fixed;
+    margin: auto;
+}
+.close-viewer{
+    margin:auto;
+}
+.viewer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
 
 
 .img-gallery{
