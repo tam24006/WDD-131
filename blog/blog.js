@@ -43,3 +43,26 @@ const articles = [
 	
 ]
 
+const articleList = document.querySelector(".article-list");
+articles.forEach(article => {
+	const book = document.createElement("article");
+	book.classList.add("book");
+
+	const literalString = `<div class="book-infor">
+            <p class="date">${article.date}</p>
+            <p>${article.ages}</p>
+            <p>${article.genre}</p>
+            <p>${article.stars}</p>
+          </div>
+
+          <div class="book-content">
+            <h2>${article.title}</h2>
+            <img class="book-img" src=${article.imgSrc} alt=${article.imgAlt}/>
+            // <p class="book-detail">${article.description}<a class="read-more" href="#">Read More...</a>
+            </p>
+          </div>`;
+
+	book.innerHTML = literalString;
+	articleList.appendChild(book);
+});
+
