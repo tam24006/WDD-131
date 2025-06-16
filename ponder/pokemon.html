@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ditto Info</title>
+</head>
+<body>
+
+  <h1 id="name"></h1>
+  <h2 id="ability"></h2>
+  <img id="ditto" src="" alt="Ditto image">
+
+  <button onclick="transformDitto()">Transform</button>
+
+  <script>
+    const ditto = {
+      id: 132,
+      name: "ditto",
+      type: "normal",
+      abilities: ["limber", "imposter"],
+      base_experience: 101,
+      height: 3,
+      weight: 40,
+      stats: {
+        hp: 48,
+        attack: 48,
+        defense: 48,
+        special_attack: 48,
+        special_defense: 48,
+        speed: 48
+      },
+      sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+      transform: function(){
+        return this.sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png";
+      }
+    };
+
+    // Display Ditto info
+    document.getElementById("name").textContent = ditto.name.toUpperCase();
+    document.getElementById("ability").textContent = "Abilities: " + ditto.abilities.join(", ");
+    document.getElementById("ditto").src = ditto.sprite;
+
+    // Function to change Ditto to shiny form
+    function transformDitto() {
+      ditto.transform();
+      document.getElementById("ditto").src = ditto.sprite;
+    }
+  </script>
+
+</body>
+</html>
+
+
