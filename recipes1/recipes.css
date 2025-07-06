@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Patrick+Hand&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Patrick Hand";
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header  */
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: "Patrick Hand";
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+img {
+	max-width: 100%;
+    width: 120px;
+}
+
+
+/* main  */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.line {
+    border-bottom: 2px solid rgb(180, 177, 177);
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.2);
+    width: 100%;
+}
+
+
+#recipe-searchbar {
+    border-radius: 4px;
+    height: 36px;
+    width: 90%;
+    font-size: 1.3rem;
+    margin-right: -3px;
+}
+
+.search-btn {
+    height: 36px;
+    width: 42px;
+    border-radius: 4px;
+    padding: 1px 4px;
+}
+
+
+/* main - recipe */
+main {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;       
+    margin: 0; 
+}
+
+.recipe-container {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    /* gap: 15px; */
+}
+
+.recipe-img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.tag-row {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.recipe-tag {
+    width: 100px;
+    border: solid 1px black;
+    padding: 4px 7px;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.recipe-name {
+    margin-top: 28px;
+    color: #307b7b;
+    font-family: "Patrick Hand";
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.recipe-description {
+    display: none;
+}
+
+.recipe-infor {
+    margin-bottom: 50px;
+}
+
+.icon-star-empty1 {
+    font-size: 1.4rem;
+}
+
+/* footer  */
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-img {
+    width: 60px;
+}
+
+.attribution {
+    margin-top: 5px;
+    font-size: large;
+}
+
+@media screen and (min-width: 600px) {
+    .line {
+        width: 95%;
+    }
+
+    .recipe-description {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 90%;
+    }
+
+
+
+    .article {
+        width: 100%;
+    }
+    
+    .recipe-img {
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .recipe-infor {
+        margin-top: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 50px 35px;
+    }
+    
+    .social-img {
+        width: 40px;
+    }
+}

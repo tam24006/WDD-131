@@ -1,0 +1,95 @@
+
+/* https://coolors.co/004b23-006400-007200-008000-38b000-70e000-9ef01a-ccff33 */
+
+/* --cal-poly-green: #004b23ff;
+--office-green: #006400ff;
+--office-green-2: #007200ff;
+--office-green-3: #008000ff;
+--kelly-green: #38b000ff;
+--sgbus-green: #70e000ff;
+--spring-bud: #9ef01aff;
+--lime: #ccff33ff; */
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2dc653;
+    color: #333;
+  }
+  
+  header {
+    background-color: #10451d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav input[type="text"] {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #239227;;
+    color: white;
+    /* text-align: center; */
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.social-img {
+    width: 60px;
+}
+
+.attribution {
+    margin-top: 5px;
+    font-size: large;
+}
+
+  
