@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+ 
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    padding: 20px;
+    display: inline-block;
+    color: beige;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: 0.2s;
+}
+.navbar a:hover{
+    color: #ddd;
+}
+.home{
+    width: 800px;
+    height: auto;
+}
+
+.footer{
+    background-color: antiquewhite;
+    padding: 70px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.social{
+    width: 25%;
+    padding: 0 15px;
+}
+.social h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.social h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.social ul:not(:last-child){
+    margin-bottom: 10px;
+}
+.social ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.social ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+.social .social-links{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(red, green, blue, alpha 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+
+

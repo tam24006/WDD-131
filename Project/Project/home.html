@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellLink - Your Trusted Health Information Platform</title>
+    <link href="home.css" rel="stylesheet" />
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                WellLink
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home.html">Home</a></li>
+                    <li><a href="#resources.html">Resources</a></li>
+                    <li><a href="#information.html">Information</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search health topics...">
+                <button class="search-btn"></button>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="disclaimer">
+
+        </div>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trusted Health Information</h1>
+                <p>Find reliable information on nutrition, mental health, fitness, prevention, and more in one location.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <p>Trusted Sources</p>
+                    </div>
+                    <div class="stat">
+                        <p>Health Articles</p>
+                    </div>
+                    <div class="stat">
+                        <p>Access</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <h2>Explore Health Topics</h2>
+            <!-- <p class="section-subtitle">Click on any category to access articles from leading health websites</p> -->
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Nutrition & Diet</h3>
+                    <!-- <p>Discover healthy eating guides, nutrition facts, and dietary recommendations from top nutritionists.</p>
+                    <div class="external-links">
+                        <a href="https://nutritionfacts.org" target="_blank" class="external-link">Nutrition</a>
+                        <a href="https://www.eatright.org" target="_blank" class="external-link">Eatright</a>
+                        <a href="https://www.eatright.org/health/wellness/awareness-campaigns" target="_blank" class="external-link">Awareness</a>
+                    </div> -->
+                    
+                    <!-- Nutrition Search Section -->
+                    <div class="nutrition-search">
+                        <div class="search-input-group">
+                            <input type="text" id="food-search" placeholder="Search for any food (e.g., pizza, broccoli, steak)" class="food-search-input">
+                            <button onclick="searchFood()" class="search-food-btn">Search</button>
+                        </div>
+                        <div id="nutrition-result">Loading nutrition info...</div>
+                        <button class="view-more-btn" onclick="loadNewNutrition()">Get Random Nutrition Facts</button>
+                    </div>
+                </div>
+
+                <div class="category-card" id="mental-health-card">
+                    <div class="category-icon"></div>
+                    <h3>Mental Health</h3>
+                    <p>Access resources on stress management, anxiety, depression, and overall mental wellness.</p>
+                    <div class="external-links">
+                        <div class="api-output" id="mental-health-quote">Loading mental health tip...</div>
+                        <button class="view-more-btn" onclick="openMentalHealthModal()">View Mental Health Resources</button>
+                        <a href="https://www.pearlhealth.org" target="_blank" class="external-link">Pearl health</a>
+                        <a href="https://www.mentalhealth.gov" target="_blank" class="external-link">Mental Health</a>
+                        <a href="https://www.nami.org" target="_blank" class="external-link">Mental Illness</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"></div>
+                    <h3>Fitness & Exercise</h3>
+                    <p>Find workout routines, exercise tips, and fitness guidance from certified trainers and health experts.</p>
+                    <div class="external-links">
+                        <div class="fitness-search">
+                            <div class="search-input-group">
+                                <input type="text" id="fitness-search" placeholder="Search for a workout (e.g., abs, yoga, cardio)" class="fitness-search-input">
+                                <button onclick="searchFitness()" class="search-fitness-btn">Search</button>
+                            </div>
+                            <div id="fitness-exercises">Loading workout ideas...</div>
+                        </div>
+                        <a href="https://www.acsm.org" target="_blank" class="external-link">ACSM</a>
+                        <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness" target="_blank" class="external-link">Mayo Clinic Fitness</a>
+                        <a href="https://www.cdc.gov/physicalactivity" target="_blank" class="external-link">CDC Physical Activity</a>
+                    </div>
+                </div>  
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <h3>About WellLink</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellLink. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+

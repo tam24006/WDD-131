@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyra Tambatamba">
+    <meta name="description" content="chichi's food offering authentic and delicious South African dishes">
+    <title>ChiChi's</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+    <header>
+       <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html" target="_blank">Menu</a>
+            <!-- <a href="site-plan.html" target="_blank">Site plan</a> -->
+       </nav> 
+            <a class="logo-link" href="index.html">
+                <img class="logo-img" src="images/logo.png" alt="restaurant logo">
+            </a>
+       <div class="cart-container">
+            <img class="cart-img" src="images/cart.png" alt="cart icon">
+            <p class="cart-text">Cart</p>
+       </div>
+    </header>
+    <main>
+        <div class="hp-content">
+            <section class="welcome-container">
+                <img src="images/food.JPG" alt="Welcome to restaurant photo" class="welcome-img">
+                <div class="welcome-msg">
+                    <h1>Chichi's</h1>
+                    <p>At Chichi's, we’re all about authentic South African flavour, good times, and unforgettable moments. 
+                        From mouthwatering shisa nyama to refreshing cocktails and a laid-back atmosphere, this is the ultimate hangout spot for families, friends, foodies, and fun-seekers.
+                         Whether you're stopping by for a chilled drink, a weekend braai, or just good conversation under the sun, you'll feel right at home.
+                        Come for the food. Stay for the vibes.</p>
+                </div>
+            </section>
+
+            <!-- feature dishes slideshow  -->
+            <section class="featured-dish-container">
+                <h2>Our feature dishes</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/food 1.jpg" alt="One of our featured dishes is Pho">
+                        <div class="slideshow-txt"></div>
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/food 4.jpg" alt="One of our featured dishes is Banhmi">
+                        <div class="slideshow-txt"></div>
+                    </div>
+                    <div class="mySlides">
+                        <img class="slideshow-img" src="images/food 6.jpg" alt="One of our featured dishes is Com tam">
+                        <div class="slideshow-txt"></div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+            <!-- celebration -->
+            <section class="celebrations-container">
+                <h2>Celebrations</h2>
+                <div class="celebrations-content"></div>
+                <div class="place-order-container">
+                    <button type="submit" class="place-order-btn">Place an order</button>
+                    <!-- order form  -->
+                    <form class="order-form hide">
+                        <fieldset class="orders">
+                            <legend>Order Information</legend>
+                            <section class="order-infor">
+                              <div class="item">
+                                <label for="name">Name<span>*</span></label>
+                                <input id="name" type="text" name="name" value="" required>
+                              </div>
+
+                              <div class="item">
+                                <label for="eaddress">Email Address<span>*</span></label>
+                                <input id="eaddress" type="text" name="eaddress">
+                              </div>
+
+                              <div class="item">
+                                <label for="phone">Phone<span>*</span></label>
+                                <input id="phone" type="tel" name="phone">
+                              </div>
+
+                              <div class="item">
+                                <label for="date">Desired Date <span>*</span></label>
+                                <input id="date" type="date" name="date">
+                              </div>
+
+                              <div class="item">
+                                <p>Celebration options</p>
+                                <select>
+                                  <option selected value="" disabled></option>
+                                  <option value="1">Let's party Mzansi <style></style></option>
+                                  <option value="2">Families & Friends hangout</option>
+                                  <option value="3">Good Vibes </option>
+                                </select>
+                              </div>
+                            </section>
+                            <button type="submit" id="add">Add Order</button>
+                          </fieldset>
+                    </form>
+                </div>
+                <div class="order-confirm hide"></div>
+            </section>
+            <!-- feedback  -->
+            <section class="feedback-container">
+                <h2>What our customers say</h2>
+                <div class="feedback-content">
+                    <div class="feedback">
+                        <img src="images/Richard o.jpg" alt="photo of User1">
+                        <div>
+                            <p>“Absolutely the best spot in town! The meat is grilled to perfection, the chakalaka is spicy just right, and the music had us dancing in our seats. 
+                                My kids had a blast, and the staff treated us like family. Braaivibes really brings the spirit of Mzansi to life!”</p>
+                            <h3>Richard O.</h3>
+                            <div class="star">⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="images/Natasha t.jpg" alt="photo of User2">
+                        <div>
+                            <p>“This place is a gem! The vibe is unmatched fire grilled food, cold drinks, and that unmistakable South African energy. 
+                                I came with friends after work and ended up staying for hours. It’s modern, cozy, and full of culture. Highly recommend for locals and tourists alike.”</p>
+                            <h3>Natasha T.</h3>
+                            <div class="star">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="feedback-form">
+                    <h4>Tell us how you feel</h4>
+                    <div class="item">
+                        <label for="name">Name<span>*</span></label>
+                        <input id="name2" type="text" name="name" value="" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="item">
+                        <label for="comment">Feedback<span>*</span></label>
+                        <textarea id="comment" name="comment" placeholder="How do you feel about us?"></textarea>
+                    </div>
+                    <button type="submit" id="feedback-add">Submit</button>
+                </form>
+                <div class="feedback-msg hide">Thank you for your feedback!</div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a class="logo-link2" href="index.html">
+            <img class="logo-img2" src="images/logo.png" alt="restaurant logo">
+        </a>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html" target="_blank">Menu</a>
+            <a href="site-plan.html" target="_blank">Site plan</a>
+       </nav> 
+       <div class="social">
+            <a class="social-link" target="_blank" href="https://facebook.com">
+            <img
+                src="images/facebook.png"
+                alt="Facebook logo - Visit our page"
+            >
+            </a>
+            <a class="social-link" target="_blank" href="https://twitter.com">
+            <img
+                src="images/twitter.png"
+                alt="Twitter logo - Follow us for travel updates"
+            >
+            </a>
+            <a class="social-link" target="_blank" href="https://instagram.com">
+            <img
+                src="images/instagram.png"
+                alt="Instagram logo - Discover Vietnam through photos"
+            >
+            </a>
+      </div>
+      <div class="legal-links">
+            <p>2025 Chichi's. All rights reserved.</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+      </div>
+    </footer>
+</body>
+</html>

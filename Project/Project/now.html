@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthLine Hub</title>
+</head>
+<body>
+  <h2>COVID-19 Global Statistics</h2>
+<div id="covid-data">Loading data...</div>
+
+
+<script>
+  // Step 1: Define the API endpoint
+  const url = "https://api.covid19api.com/summary";
+
+  // Step 2: Use fetch() to get data
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json(); // Convert to JSON
+    })
+    .then(data => {
+      // Step 3: Extract the global statistics
+      const global = data.Global;
+      const displayText = `
+        <strong>New Confirmed:</strong> ${global.NewConfirmed} <br>
+        <strong>Total Confirmed:</strong> ${global.TotalConfirmed} <br>
+        <strong>Total Deaths:</strong> ${global.TotalDeaths} <br>
+        <strong>Total Recovered:</strong> ${global.TotalRecovered}
+      `;
+      // Step 4: Show the data on the page
+      document.getElementById("covid-data").innerHTML = displayText;
+    })
+    .catch(error => {
+      document.getElementById("covid-data").innerHTML = "Error loading data.";
+      console.error("Fetch error:", error);
+    });
+</script>
+
+
+  
